@@ -21,6 +21,7 @@ class IMDBProvider(object):
 
     def set_default(self):
         self.params.clear()
+        self.params["titleType"] = "movie"
 
     def get(self, title=None, year=None):
         self.set_default()

@@ -1,13 +1,14 @@
-from rt import RTProvider
-from tmdb import TMDBProvider
-from nyt import NYTProvider
-from fa import FAProvider
-from imdb_omd import IMDBOMDProvider
-from mc import MCProvider
-from imdb import IMDBProvider
+from providers.rt import RTProvider
+from providers.tmdb import TMDBProvider
+from providers.nyt import NYTProvider
+from providers.fa import FAProvider
+from providers.imdb_omd import IMDBOMDProvider
+from providers.mc import MCProvider
+from providers.imdb import IMDBProvider
 
 from concurrent.futures import ThreadPoolExecutor
 import matplotlib.pyplot as plt
+from matplotlib.pyplot import Figure
 
 
 class Evaluator(object):
@@ -26,7 +27,7 @@ class Evaluator(object):
             for idx in range(len(self.providers)):
                 executor.submit(self.run_provider, idx)
 
-    def make_barplot(self): #todo szerokość wykresu
+    def make_barplot(self):
         labels = []
         values = []
         for i, b in enumerate(self.returns):
@@ -39,10 +40,10 @@ class Evaluator(object):
         plt.figure(figsize=(10, 5))
         plt.barh(labels, values)
         plt.xticks(fontsize=16)
-        plt.yticks(fontsize=20)
+        plt.yticks(fontsize=16)
         plt.xlim([0, 10])
         plt.title("Statistics:", fontsize=25)
-        plt.savefig("static/barplot.png")
+        plt.savefig("static/barplot.png", bbox_inches="tight")
 
     def evaluate(self, **kwargs):
         self.kwargs = kwargs
@@ -108,3 +109,12 @@ class Evaluator(object):
             "poster": poster
         }
         return result
+
+if __name__ == '__main__':
+    ev = Evaluator()
+    arg = {
+        'title': "hulk",
+        'year': 2008
+    }
+    a = ev.evaluate(**arg)
+    print(a)

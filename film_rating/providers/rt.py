@@ -1,4 +1,4 @@
-from omd import OMDProvider
+from providers.omd import OMDProvider
 
 
 class RTProvider(OMDProvider):
