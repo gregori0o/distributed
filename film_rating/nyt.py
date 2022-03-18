@@ -3,7 +3,7 @@ import requests
 
 class NYTProvider(object):
     url = "https://api.nytimes.com/svc/movies/v2/reviews/search.json"
-    apikey = "apikey"
+    apikey = "Q8h70zj5KtGL3vv5EGXAtO64e0BlCvRY"
 
     params_names = {
         "title": "query",

@@ -3,7 +3,7 @@ import requests
 
 class TMDBProvider(object):
     url = "https://api.themoviedb.org/3/search/movie"
-    apikey = "apikey"
+    apikey = "49bcacaf8f51052423260862062ba9ae"
 
     params_names = {
         "title": "query",

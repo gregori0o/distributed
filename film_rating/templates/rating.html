@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rating</title>
+</head>
+<body>
+<nav>
+    <a href="{{ url_for('index') }}">BACK</a>
+</nav>
+<img src="{{ poster }}" alt="" style="float:right; margin:6px; width:250">
+<p>
+    Title: {{ title }} </br>
+    Average rating: {{ average }} </br>
+    Weighted average rating: {{ w_average }} </br>
+    Maximum rating: {{ maximum }} </br>
+    Minimum rating: {{ minimum }} </br></br>
+    Get ratings from {{ num_accept }} of {{ num }} providers
+</p>
+<img src="{{url_for('static', filename = 'barplot.png') }}" alt="" width="400">
+<p>
+    {{ review }}
+    </br></br>
+    <a href="{{ url }}">{{ url_description }}</a>
+</p>
+
+</body>
+</html>

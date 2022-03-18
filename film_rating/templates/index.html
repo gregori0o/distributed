@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Film</title>
+</head>
+<body>
+<h1>Get Film Rating</h1>
+<form action="rating" method="POST">
+    <label for="title">Enter title:</label>
+    <input type="text" name="title" value="" required>
+    </br>
+    <label for="year">Enter production year:</label>
+    <input type="number" name="year" value="">
+    </br></br>
+    <input type="submit" value="Submit">
+</form>
+<p>
+    {{ error }}
+</p>
+</body>
+</html>
