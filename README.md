@@ -1,4 +1,4 @@
-# Distribiuted System
+# Distributed System
 Laboratory of Distributed System at AGH University in 2022.
 
 Tasks:
