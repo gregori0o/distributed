@@ -3,7 +3,7 @@ import requests
 
 class OMDProvider(object):
     url = "http://www.omdbapi.com"
-    apikey = "d289e0a2"
+    apikey = "[API_KEY]"
 
     params_names = {
         "title": "t",

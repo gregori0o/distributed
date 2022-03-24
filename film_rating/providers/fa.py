@@ -4,7 +4,7 @@ import requests
 class FAProvider(object):
     url = "https://filmaffinity-unofficial.p.rapidapi.com/movie/search/"
     apihost = "filmaffinity-unofficial.p.rapidapi.com"
-    apikey = "79b484254bmsh267702e9c5262bdp12dd08jsneb739f943dd0"
+    apikey = "[API_KEY]"
 
     params_names = {
         "title": "query",

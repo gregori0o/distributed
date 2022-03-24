@@ -4,7 +4,7 @@ import requests
 class IMDBProvider(object):
     url = "https://data-imdb1.p.rapidapi.com/titles/search/title/"
     apihost = "data-imdb1.p.rapidapi.com"
-    apikey = "79b484254bmsh267702e9c5262bdp12dd08jsneb739f943dd0"
+    apikey = "[API_KEY]"
 
     params_names = {
         "year": "year"
