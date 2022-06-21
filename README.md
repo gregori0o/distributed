@@ -2,6 +2,9 @@
 Laboratory of Distributed System at AGH University in 2022.
 
 Tasks:
-1) [Socket TCP/UDP - chat](https://github.com/gregori0o/distributet/tree/main/chat)
-2) [REST - Film Rating](https://github.com/gregori0o/distributet/tree/main/film_rating)
-3) ...
+1) [Socket TCP/UDP - chat](chat)
+2) [REST - Film Rating](film_rating)
+3) [Rabbit MQ - Queuing system](rabbit)
+4) [ICE - Smart Home](ice)
+#5) [Zookeper - Watchers](zookeeper)
+

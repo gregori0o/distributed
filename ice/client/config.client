@@ -1,0 +1,56 @@
+#
+# The client reads this property to create the reference to the
+# "hello" object in the server.
+#
+Music1.Proxy=audio/ground : tcp -h 127.0.0.2 -p 10000 -z : udp -h 127.0.0.2 -p 10000 -z
+Music2.Proxy=audio/floor : tcp -h 127.0.0.2 -p 10000 -z : udp -h 127.0.0.2 -p 10000 -z
+Furnace1.Proxy=heating/furnace : tcp -h 127.0.0.2 -p 10000 -z : udp -h 127.0.0.2 -p 10000 -z
+Kitchen.Proxy=simple/kitchen : tcp -h 127.0.0.3 -p 10001 -z : udp -h 127.0.0.3 -p 10001 -z
+Hall.Proxy=simple/hall : tcp -h 127.0.0.3 -p 10001 -z : udp -h 127.0.0.3 -p 10001 -z
+LivingRoom.Proxy=bulbs/living_room : tcp -h 127.0.0.3 -p 10001 -z : udp -h 127.0.0.3 -p 10001 -z
+SittingRoom.Proxy=smooth/sitting_room : tcp -h 127.0.0.3 -p 10001 -z : udp -h 127.0.0.3 -p 10001 -z
+Room.Proxy=bulbs/room : tcp -h 127.0.0.3 -p 10001 -z : udp -h 127.0.0.3 -p 10001 -z
+Attic.Proxy=simple/attic : tcp -h 127.0.0.3 -p 10001 -z : udp -h 127.0.0.3 -p 10001 -z
+Server1.Proxy=server/identities : tcp -h 127.0.0.2 -p 10000 -z : udp -h 127.0.0.2 -p 10000 -z
+Server2.Proxy=server/identities : tcp -h 127.0.0.3 -p 10001 -z : udp -h 127.0.0.3 -p 10001 -z
+
+#
+# Warn about connection exceptions.
+#
+Ice.Warn.Connections=1
+
+Ice.ACM.Timeout=10
+
+#
+# Network Tracing
+#
+# 0 = no network tracing
+# 1 = trace connection establishment and closure
+# 2 = like 1, but more detailed
+# 3 = like 2, but also trace data transfer
+#
+#Ice.Trace.Network=2
+
+#
+# Protocol Tracing
+#
+# 0 = no protocol tracing
+# 1 = trace protocol messages
+#
+#Ice.Trace.Protocol=1
+
+#
+# Security Tracing
+#
+# 0 = no security tracing
+# 1 = trace messages
+#
+#IceSSL.Trace.Security=1
+
+#
+# SSL Configuration
+#
+#Ice.Plugin.IceSSL=IceSSL.PluginFactory
+#IceSSL.DefaultDir=certs
+#IceSSL.Keystore=client.jks
+#IceSSL.Password=password
