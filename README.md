@@ -6,5 +6,5 @@ Tasks:
 2) [REST - Film Rating](film_rating)
 3) [Rabbit MQ - Queuing system](rabbit)
 4) [ICE - Smart Home](ice)
-#5) [Zookeper - Watchers](zookeeper)
+<!-- 5) [Zookeper - Watchers](zookeeper) -->
 
